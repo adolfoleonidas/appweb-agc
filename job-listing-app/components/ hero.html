@@ -1,0 +1,52 @@
+<!-- Hero Section -->
+<section class="hero hero-jobs">
+  <div class="container">
+    <div class="hero-content animate-fade-in">
+      <h1>Encuentra tu próximo trabajo hoy</h1>
+      <p>Miles de oportunidades en empresas agroexportadoras de Ica</p>
+
+      <!-- Main Search Form -->
+      <div class="search-box">
+        <form
+          class="search-form"
+          id="searchForm"
+          action="/empleos/buscar"
+          method="GET"
+        >
+          <div class="search-group">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              name="query"
+              id="searchInput"
+              class="search-input"
+              placeholder="Buscar empleos..."
+              autocomplete="off"
+              aria-label="Buscar empleos"
+            />
+          </div>
+          <div class="search-group">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <select
+              name="location"
+              id="locationSelect"
+              class="search-select"
+              aria-label="Seleccionar ubicación"
+            >
+              <option value="">Todas las ubicaciones</option>
+              <option value="ICA">Ica</option>
+              <option value="CHINCHA">Chincha</option>
+              <option value="PISCO">Pisco</option>
+              <option value="LIMA">Lima</option>
+              <option value="TRUJILLO">Trujillo</option>
+            </select>
+          </div>
+          <button type="submit" class="button button-primary">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <span>Buscar Empleos</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
